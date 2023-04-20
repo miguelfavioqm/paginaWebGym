@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+$buttoncolor: #F49624;
+$color-main: #172945;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+.btn-main{
+    background-color: $buttoncolor;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    &:hover{
+        opacity: 75%;
+    }
+}
+.barranavegacion{
+    background-color: #172945;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    &-principal{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 3rem;
+        color: $buttoncolor;
+        i:hover{
+            opacity: 75%;
+        }
+        &-logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 70%;
+            }
+            
+        }
+    }
+    &-items{
+        display: none;
+        padding: 1rem;
+        li{
+            text-align: center;
+            height: 2rem;
+            list-style: none;
+            a{
+                
+                color: aliceblue;
+                text-decoration: none;
+            }
+        }
+        li:first-child{
+            text-decoration: underline 5px;
+        }
+        li:hover{
+            text-decoration: underline 5px;
+        }
+    }
+    .add{
+        display: block;
+    }
+}
+.section-1{
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/stronger-young-muscular-caucasian-athlete-practicing-lunges-in-gym-with-barbell-male-model-doing-strength-exercises-training-his-lower-body-wellness-healthy-lifestyle-bodybuilding-concept\ 1.webp);
+    background-repeat: no-repeat;
+    background-size: 120% 100%;
+    color: white;
+    padding: 4rem;
+    &-txt{
+        width: 70%;
+    }
+}
+.section-2{
+    display: flex;
+    gap:0.5rem;
+    padding: 1rem;
+    background-color: $color-main;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.section-3{  
+    height: 45vh;
+    padding: 4rem;
+    background-image: url(../img/group-of-happy-people-sitting-on-floor-after-workout\ 1.webp);
+    background-repeat: no-repeat;
+    background-size: 120% 100%;
+    box-shadow: 10rem 2rem 10rem 1rem black inset;
+    &-txt1{
+        color: white;
+        width: 40%;
+    }
+    &-txt2{
+        margin: 1rem 1rem 2rem 2rem;
+        color: $buttoncolor;
+    }
+}
+.section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    &-cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+        &-card{
+            height: 40vh;
+            width: 80%;
+            background-color: #272727;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            &-price{
+                color: $buttoncolor;
+            }
+            &-list{
+                list-style: none;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+        }
+        
+    }
+}
+.section-5{
+    @extend .section-4;
+    &-cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+        &-card{
+            height: 40vh;
+            width: 80%;
+            background-color: #272727;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            
+            &.uno{
+                background-image: url(../img/image\ 6.webp);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                animation: color 5s ease-in-out infinite;
+             @keyframes color {
+                0%{
+                    box-shadow: 0rem -2rem 3rem 1rem $buttoncolor inset;
+                }
+                50%{
+                    box-shadow: 0rem -1rem 1rem 0.5rem $color-main inset;
+                }
+                100%{
+                    box-shadow: 0rem -2rem 3em 1rem $buttoncolor inset;
+                }
+            }
+            }
+            &.dos{
+                background-image: url(../img/image\ 5.webp);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                animation: color2 5s ease-in-out infinite;
+                @keyframes color2 {
+                    0%{
+                        box-shadow: 0rem -2rem 3rem 1rem $color-main inset;
+                    }
+                    50%{
+                        box-shadow: 0rem -2rem 3rem 1rem $buttoncolor inset;
+                    }
+                    100%{
+                        box-shadow: 0rem -2rem 3em 1rem $color-main inset;
+                    }
+                }
+            }
+            &.tres{
+                background-image: url(../img/image\ 4.webp);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                animation: color 5s ease-in-out infinite;
+             @keyframes color {
+                0%{
+                    box-shadow: 0rem -2rem 3rem 1rem $buttoncolor inset;
+                }
+                50%{
+                    box-shadow: 0rem -1rem 1rem 0.5rem $color-main inset;
+                }
+                100%{
+                    box-shadow: 0rem -2rem 3em 1rem $buttoncolor inset;
+                }
+            }
+            }
+        }
+    }
+}
+.section-6{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    &-uno{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    &-dos{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &-list{
+            list-style: none;
+            text-align: center;
+            li{
+                margin: 1rem;
+            }
+            a{
+                color: white;
+                
+            }
+        }
+    }
+    &-tres{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            input{
+                background-color: #323232;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+.footer{
+    background-color: black;
+    color: #484848;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    &-icons{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        i{
+            cursor: pointer;
+            &:hover{
+                opacity: 75%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .barranavegacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 1.2rem;
+        &-principal{
+            width: 20%;
+            i{
+                display: none;
+            }
+        }
+        &-items{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 2rem;
+        }
+    }
+    .section-1{
+        width: 100%;
+        height: 85vh;
+        padding-top: 10rem;
+        &-txt{
+            margin-top: 4rem;
+            font-size: 4rem;
+        }
+    }
+    .section-2{
+        justify-content: space-around;
+    }
+    .section-3{
+        height: 80vh;
+        &-txt1{
+            font-size: 4rem;
+        }
+        &-txt2{
+            font-size: 3rem;
+        }
+        
+    }
+    .section-4{
+        &-cards{
+            display: flex;
+            flex-wrap: wrap;
+            &-card{
+                width: 30%;
+                height: 50vh;
+            }           
+        }
+    }
+    .section-5{
+        &-cards{
+            &-card{
+                width: 30%;
+                height: 60vh;
+            }
+        }
+    }
+    .section-6{
+        flex-direction: row;
+        justify-content: space-around;
+        &-uno{
+            width: 20%;
+        }
+    }
+    .footer{
+        flex-direction: row;
+        gap: 2rem;
+        &-icons{
+            width: 30%;
+            margin-bottom: 0;
+        }
+    }
+}
